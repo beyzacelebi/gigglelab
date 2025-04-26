@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GiggleLab - Become a Giggle Chemist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="chemist.css">
+</head>
+<body class="fade-in">
+
+  <header>
+    <img src="../assets/logo.png" alt="GiggleLab Logo" class="logo hover-effect">
+    <nav>
+      <ul>
+        <li><a href="../homepage/homepage.html">Home</a></li>
+        <li><a href="../spark/spark.html">Spark a Giggle</a></li>
+        <li><a href="../chemist/chemist.html">Become a Giggle Chemist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="../assets/laugh.png" alt="Laugh Emoji" class="laughing-face wiggle">
+
+  <section class="content">
+    <h1>Become a Giggle Chemist</h1>
+    <textarea id="userJoke" placeholder="Write your own joke here..."></textarea>
+    <a class="spark-button hover-button" onclick="submitJoke()">Submit Joke</a>
+    <div id="submittedJoke" class="joke-box"></div>
+  </section>
+
+  <script src="chemist.js"></script>
+</body>
+</html>

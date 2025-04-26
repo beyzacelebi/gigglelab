@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+    background: white;
+    width: 1440px;
+    height: 1024px;
+    overflow: hidden;
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.2s ease-in forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 56px;
+    right: 100px;
+  }
+  
+  .logo {
+    width: 368.58px;
+    height: 186px;
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-effect:hover {
+    transform: rotate(2deg) scale(1.02);
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f4b400;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+  }
+  
+  .laughing-face {
+    position: absolute;
+    top: 218px;
+    left: 0px;
+    width: 579px;
+    height: 622px;
+  }
+  
+  .wiggle {
+    animation: wiggleAnimation 4s infinite ease-in-out;
+  }
+  
+  @keyframes wiggleAnimation {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-2deg); }
+  }
+  
+  .content {
+    position: absolute;
+    top: 346px;
+    left: 779px;
+    width: 500px;
+    text-align: left;
+  }
+  
+  .content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .highlight {
+    color: #f4b400;
+  }
+  
+  .content p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+
+  .spark-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: #f4b400;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+
+  .hover-button:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+  }
+  
